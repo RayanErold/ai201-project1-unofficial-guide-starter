@@ -9,31 +9,24 @@
 
 ## Domain
 
-<!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+Universal Consumer Rights, Federal Protections, and Financial Legal Safeguards. While federal laws and consumer protection acts guarantee individuals vital rights regarding credit reporting, rental agreements, and medical billing, this statutory knowledge is typically buried inside dense, jargon-heavy government regulations and multi-page policy PDF documents. This RAG system addresses this barrier by consolidating verified regulatory clauses into an accessible repository, allowing everyday consumers to extract plain-language, actionable legal guardrails and exact source citations instantly when facing corporate or financial disputes.
 
 ---
 
 ## Document Sources
 
-<!-- List every source you collected documents from.
-     Be specific: include URLs, subreddit names, forum thread titles, or file names.
-     Aim for variety — sources that together cover different subtopics or perspectives. -->
-
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | doc_1_credit_score_rights.txt | Consumer Financial Protection Bureau (CFPB) | https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/ |
+| 2 | doc_2_security_deposit_laws.txt | US Dept of Housing and Urban Development (HUD) | https://www.hud.gov/topics/rental_assistance/tenantrights |
+| 3 | doc_3_airline_passenger_refunds.txt | US Department of Transportation (DOT) | https://www.transportation.gov/airconsumer/flights-and-rights |
+| 4 | doc_4_medical_bill_protection.txt | Centers for Medicare & Medicaid Services (CMS) | https://www.cms.gov/nosurprises/consumers |
+| 5 | doc_5_bank_overdraft_loopholes.txt | Consumer Financial Protection Bureau (CFPB) | https://www.consumerfinance.gov/compliance/compliance-resources/deposit-accounts-resources/overdraft-services/ |
+| 6 | doc_6_student_loan_forgiveness.txt | Federal Student Aid (.gov) | https://studentaid.gov/manage-loans/forgiveness-cancellation |
+| 7 | doc_7_subscription_cancel_laws.txt | Federal Trade Commission (FTC) | https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule |
+| 8 | doc_8_credit_card_fraud_liability.txt | Federal Trade Commission (FTC) | https://www.consumer.ftc.gov/articles/lost-or-stolen-credit-atm-debit-cards |
+| 9 | doc_9_car_lemon_laws.txt | USA.gov Official Portal | https://www.usa.gov/car-repair-recalled-lemon |
+| 10 | doc_10_wage_theft_protections.txt | US Department of Labor (DOL) | https://www.dol.gov/agencies/whd/fact-sheets/16-flsa-deductions |
 
 ---
 
