@@ -1,13 +1,16 @@
 import os
+from pathlib import Path
 import chromadb
 from groq import Groq
 import gradio as gr
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 
+REPO_ROOT = Path(__file__).resolve().parent.parent
+
 # Load environment variables from .env (if present)
 try:
     from dotenv import load_dotenv
-    load_dotenv()
+    load_dotenv(dotenv_path=REPO_ROOT / ".env")
 except Exception:
     # If python-dotenv is not installed, environment variables must be set externally.
     pass
@@ -21,8 +24,8 @@ if not GROQ_KEY:
 groq_client = Groq(api_key=GROQ_KEY)
 
 # Connect to your existing local ChromaDB database from Milestone 4
-DB_PATH = "./chroma_db"
-chroma_client = chromadb.PersistentClient(path=DB_PATH)
+DB_PATH = REPO_ROOT / "chroma_db"
+chroma_client = chromadb.PersistentClient(path=str(DB_PATH))
 embedding_function = SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
 collection = chroma_client.get_collection(
     name="consumer_rights_protection", 

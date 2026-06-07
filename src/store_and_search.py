@@ -2,13 +2,16 @@ import os
 import glob
 import random
 import re
+from pathlib import Path
 import chromadb
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 
+REPO_ROOT = Path(__file__).resolve().parent.parent
+
 # 1. Initialize local persistent database client
 # This saves database state to disk so it survives code restarts
-DB_PATH = "./chroma_db"
-client = chromadb.PersistentClient(path=DB_PATH)
+DB_PATH = REPO_ROOT / "chroma_db"
+client = chromadb.PersistentClient(path=str(DB_PATH))
 
 # 2. Use the local zero-cost embedding model recommended by the spec
 embedding_function = SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
@@ -130,8 +133,8 @@ def build_query_variants(query_str):
 def build_vector_database():
     """Reads local text files, fragments them, and indexes them into ChromaDB."""
     # Look directly into your validated directory pathway
-    raw_files_path = os.path.join("documents", "data", "raw", "*.txt")
-    target_files = glob.glob(raw_files_path)
+    raw_files_path = REPO_ROOT / "documents" / "data" / "raw" / "*.txt"
+    target_files = glob.glob(str(raw_files_path))
     
     if not target_files:
         print(f"⚠️ Error: No source text files found in documents/data/raw/! Check your directory path.")

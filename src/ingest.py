@@ -23,8 +23,9 @@ from pathlib import Path
 # Configuration
 # --------------------------------------------------------------------------- #
 
-# Resolve paths relative to this file so the script runs from any working dir.
-DATA_DIR = Path(__file__).resolve().parent / "documents" / "data" / "raw"
+# Resolve paths relative to the repository root so the script runs from any working dir.
+REPO_ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = REPO_ROOT / "documents" / "data" / "raw"
 
 CHUNK_SIZE = 500     # characters per chunk
 CHUNK_OVERLAP = 100  # characters shared between consecutive chunks
