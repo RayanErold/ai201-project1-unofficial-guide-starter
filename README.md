@@ -7,6 +7,19 @@
 
 ---
 
+## Table of Contents
+- [Domain](#domain)
+- [Document Sources](#document-sources)
+- [Chunking Strategy](#chunking-strategy)
+- [Embedding Model](#embedding-model)
+- [Grounded Generation](#grounded-generation)
+- [Evaluation Report](#evaluation-report)
+- [Failure Case Analysis](#failure-case-analysis)
+- [Spec Reflection](#spec-reflection)
+- [AI Usage](#ai-usage)
+
+---
+
 ## Domain
 
 Universal Consumer Rights, Federal Protections, and Financial Legal Safeguards. While federal laws and consumer protection acts guarantee individuals vital rights regarding credit reporting, rental agreements, and medical billing, this statutory knowledge is typically buried inside dense, jargon-heavy government regulations and multi-page policy PDF documents. This RAG system addresses this barrier by consolidating verified regulatory clauses into an accessible repository, allowing everyday consumers to extract plain-language, actionable legal guardrails and exact source citations instantly when facing corporate or financial disputes.
