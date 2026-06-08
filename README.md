@@ -107,6 +107,9 @@ CRITICAL RULES:
      Be honest — a partially accurate or inaccurate result that you explain well is more
      valuable than a suspiciously perfect result. -->
 
+**Retrieval quality:** Relevant / Partially relevant / Off-target  
+**Response accuracy:** Accurate / Partially accurate / Inaccurate
+
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
 | 1 | What is my maximum legal liability if my credit card is stolen online? | Exactly $0 under the Truth in Lending Act (TILA). | According to doc_8_credit_card_fraud_liability.txt, your legal liability is exactly $0 if the card number was stolen digitally without the physical card... | Relevant | Accurate |
@@ -114,9 +117,6 @@ CRITICAL RULES:
 | 3 | Can a landlord deduct money from my security deposit because the apartment paint is slightly faded? | No, landlords cannot deduct for standard "wear and tear" like faded paint under HUD guidelines. | According to doc_2_security_deposit_laws.txt, landlords are legally prohibited from deducting for normal wear and tear, which explicitly includes faded interior wall paint. | Relevant | Accurate |
 | 4 | What happens to my flight refund if the airline cancels my flight due to a major system outage? | Entitled to a full cash refund, not just a travel voucher, per DOT mandates. | According to doc_3_airline_passenger_refunds.txt, when an airline cancels a flight for any reason, the passenger is legally entitled to a full cash refund of the ticket price, not a voucher. | Relevant | Accurate |
 | 5 | What is the current interest rate for a high-yield savings account at Chase Bank? | System must decline to answer due to out-of-scope boundaries. | I do not have enough information to answer that question based on the provided documents. | Relevant | Accurate |
-
-**Retrieval quality:** Relevant / Partially relevant / Off-target  
-**Response accuracy:** Accurate / Partially accurate / Inaccurate
 
 ---
 
