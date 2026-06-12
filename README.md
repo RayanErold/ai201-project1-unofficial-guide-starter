@@ -187,3 +187,9 @@ But, I do not have enough information to explicitly answer whether this specific
 - **What I gave the AI:** I provided the AI with my ChromaDB database connection logic and asked it to write a frontend interface wrapper using Gradio and the Groq client calling llama-3.3-70b-versatile.
 - **What it produced:** It generated an app.py script featuring a basic system prompt, an active LLM API calling routine, and a dual-box Gradio text portal layout.
 - **What I changed or overrode:** I aggressively tightened the system prompt instructions by applying absolute negative constraints (temperature=0.0, strict rules forbidding the model from using pre-training knowledge, and an absolute mandatory refusal phrase string). This forced the model to cleanly refuse to answer out-of-scope questions instead of hallucinating plausible-sounding financial advice.
+
+---
+
+## Demo
+
+Watch a live demo of the system in action: https://www.loom.com/share/4c8cf7dc4e7a4d0785db866e4c43f0f4
