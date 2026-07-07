@@ -190,6 +190,22 @@ But, I do not have enough information to explicitly answer whether this specific
 
 ---
 
+## Netlify Deployment
+
+This project is now structured for a Netlify deployment with:
+- A modern React + Tailwind CSS frontend in the [frontend/](frontend/) directory
+- A serverless function in [netlify/functions/ask.js](netlify/functions/ask.js)
+- Build settings in [netlify.toml](netlify.toml)
+
+To publish it:
+1. Push this repository to GitHub.
+2. In Netlify, create a new site from Git and select this repository.
+3. Netlify will automatically detect the settings in [netlify.toml](netlify.toml) (Build Command: `npm install --prefix frontend && npm run build --prefix frontend`, Publish Directory: `frontend/dist`).
+4. Add the environment variable `GROQ_API_KEY` in Netlify Site Configuration > Environment variables.
+5. Deploy the site.
+
+After deployment, the app will be available at a Netlify URL such as `https://<site-name>.netlify.app`.
+
 ## Demo
 
 Watch a live demo of the system in action: https://www.loom.com/share/4c8cf7dc4e7a4d0785db866e4c43f0f4
